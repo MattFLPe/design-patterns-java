@@ -1,6 +1,8 @@
-package com.learning.designpatterns.singleton;
+import com.learning.designpatterns.singleton.EagerSingleton;
+import com.learning.designpatterns.singleton.LazyHolderSingleton;
+import com.learning.designpatterns.singleton.LazySingleton;
 
-public class TestSingleton {
+public class TestSuite {
     public static void main(String[] args) {
         LazySingleton lazy = LazySingleton.getInstance();
         System.out.println(lazy);
