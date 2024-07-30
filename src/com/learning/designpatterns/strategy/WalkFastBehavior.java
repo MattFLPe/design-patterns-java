@@ -3,6 +3,6 @@ package com.learning.designpatterns.strategy;
 public class WalkFastBehavior implements MovementBehavior {
     @Override
     public void walk() {
-        System.out.println("Character walks fast...");
+        System.out.println("Character walks at a faster pace...");
     }
 }
