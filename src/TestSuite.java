@@ -3,7 +3,6 @@ import com.learning.designpatterns.singleton.LazyHolderSingleton;
 import com.learning.designpatterns.singleton.LazySingleton;
 import com.learning.designpatterns.strategy.*;
 import com.learning.designpatterns.strategy.Character;
-import com.learning.designpatterns.strategy.RunBehavior;
 
 public class TestSuite {
     // Singleton testing
