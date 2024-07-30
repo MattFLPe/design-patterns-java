@@ -1,11 +1,9 @@
 import com.learning.designpatterns.singleton.EagerSingleton;
 import com.learning.designpatterns.singleton.LazyHolderSingleton;
 import com.learning.designpatterns.singleton.LazySingleton;
+import com.learning.designpatterns.strategy.*;
 import com.learning.designpatterns.strategy.Character;
-import com.learning.designpatterns.strategy.MovementBehavior;
 import com.learning.designpatterns.strategy.RunBehavior;
-import com.learning.designpatterns.strategy.WalkBehavior;
-import com.learning.designpatterns.strategy.WalkSlowBehavior;
 
 public class TestSuite {
     // Singleton testing
@@ -21,12 +19,13 @@ public class TestSuite {
 
         // strategy testing
         MovementBehavior walk = new WalkBehavior();
-        MovementBehavior run = new RunBehavior();
-        MovementBehavior walkSlow = new WalkSlowBehavior();
+        MovementBehavior walkfast = new WalkFastBehavior();
+        MovementBehavior walkslow = new WalkSlowBehavior();
 
         Character character = new Character();
-        character.setBehavior(walk);
+        character.setBehavior(walkfast);
 
         character.walk();
+
     }
 }
